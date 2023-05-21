@@ -84,7 +84,7 @@ public class VentanaPrincipal extends JFrame implements ActionListener {
         if (e.getSource() == boton) {
             String imagen = (String) opciones.getSelectedItem();
             try {
-                FileWriter leer = new FileWriter("src/main/java/Hito4/coment/" + imagen + ".txt", true);
+                FileWriter leer = new FileWriter("src/main/java/Hito4/comentarios/" + imagen + ".txt", true);
                 BufferedWriter escribir = new BufferedWriter(leer);
                 if (check.isSelected()) {
                     escribir.write(imagen + ": " + texto.getText());
